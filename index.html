@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TANAN LLC - Comprehensive Business Overview</title>
+    <!-- Load Tailwind CSS from CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background, close to white */
+            color: #333; /* Darker text color */
+        }
+        /* Custom CSS variables for your color palette */
+        :root {
+            --primary-color: #03045e; /* Main dark blue */
+            --accent-light-blue: #48cae4; /* Vibrant light blue/cyan */
+            --accent-purple: #5a189a; /* Rich purple */
+            --accent-orange: #e36414; /* Energetic orange */
+        }
+
+        /* Applying custom colors with utility classes */
+        .bg-primary {
+            background-color: var(--primary-color);
+        }
+        .text-primary {
+            color: var(--primary-color);
+        }
+        .text-accent-light-blue {
+            color: var(--accent-light-blue);
+        }
+        .border-accent-light-blue {
+            border-color: var(--accent-light-blue);
+        }
+        .hover\:bg-primary-darker:hover {
+            background-color: #02034f; /* A slightly darker shade for hover effect */
+        }
+        .hover\:text-accent-light-blue:hover {
+            color: var(--accent-light-blue);
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            transition: all 0.3s ease-in-out; /* Smooth transition for hover */
+        }
+        .btn-primary:hover {
+            background-color: #02034f; /* Slightly darker primary on hover */
+            transform: scale(1.05);
+        }
+        .nav-link:hover {
+            color: var(--accent-light-blue); /* Light blue for nav links on hover */
+        }
+        .text-link-color {
+            color: var(--accent-light-blue);
+        }
+        .text-link-color:hover {
+            text-decoration: underline;
+        }
+
+        /* Specific adjustments for overall aesthetic */
+        .shadow-md {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .rounded-lg {
+            border-radius: 0.5rem;
+        }
+        .rounded-full {
+            border-radius: 9999px;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-primary p-4 shadow-lg fixed w-full z-10 top-0">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-white text-2xl font-bold rounded-lg px-3 py-1 hover:bg-white hover:text-primary transition duration-300 flex items-center">
+                <img src="tanan_llc_logo.png" alt="TANAN LLC Logo" class="h-8 mr-2 rounded-full">
+                TANAN LLC
+            </a>
+            <div class="space-x-4 flex-wrap justify-end hidden md:flex">
+                <a href="#company-overview" class="text-white nav-link text-lg transition duration-300 rounded-lg px-3 py-2">Company</a>
+                <a href="#leadership" class="text-white nav-link text-lg transition duration-300 rounded-lg px-3 py-2">Leadership</a>
+                <a href="#services" class="text-white nav-link text-lg transition duration-300 rounded-lg px-3 py-2">Services</a>
+                <a href="#expansion" class="text-white nav-link text-lg transition duration-300 rounded-lg px-3 py-2">Expansion</a>
+                <a href="#market-analysis" class="text-white nav-link text-lg transition duration-300 rounded-lg px-3 py-2">Market</a>
+                <a href="#financials" class="text-white nav-link text-lg transition duration-300 rounded-lg px-3 py-2">Financials</a>
+                <a href="#jobs" class="text-white nav-link text-lg transition duration-300 rounded-lg px-3 py-2">Jobs</a>
+                <a href="#marketing" class="text-white nav-link text-lg transition duration-300 rounded-lg px-3 py-2">Marketing</a>
+                <a href="#contact" class="text-white nav-link text-lg transition duration-300 rounded-lg px-3 py-2">Contact</a>
+            </div>
+            <!-- Hamburger menu for mobile (not implemented in this HTML, but structure for responsive nav) -->
+            <button class="text-white md:hidden focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-white py-16 sm:py-24 text-center shadow-md rounded-b-lg mx-auto mt-20 max-w-6xl px-4">
+        <div class="container mx-auto">
+            <h1 class="text-5xl sm:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                Welcome to <span class="text-accent-light-blue">TANAN LLC</span>!
+            </h1>
+            <p class="text-xl sm:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                Your trusted partner for comprehensive truck tire repair and maintenance services, enhancing efficiency and reliability across the U.S.
+            </p>
+            <a href="#services" class="inline-block btn-primary px-8 py-4 rounded-full text-lg font-semibold shadow-lg">
+                Explore Our Services
+            </a>
+        </div>
+    </header>
+
+    <!-- Company Overview Section -->
+    <section id="company-overview" class="py-16 sm:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-4xl font-bold text-center text-primary mb-12">Company Overview & Vision</h2>
+            <div class="bg-white p-8 rounded-xl shadow-md text-lg text-gray-700 leading-relaxed mb-8">
+                <h3 class="text-3xl font-semibold text-primary mb-4">Introduction to TANAN LLC</h3>
+                <p class="mb-4">
+                    Founded by Mr. Otgonjargal Darisuren in the State of Virginia as an LLC, TANAN LLC is a tire repair and maintenance services firm for trucks. The endeavor is designed with a low initial investment, funded by personal savings, with subsequent years' growth self-funded by company revenue.
+                </p>
+                <p class="mb-4">
+                    Strategically positioned in the transportation and logistics industry, TANAN LLC offers a robust value proposition centered around comprehensive tire repair and maintenance services for trucks. As an essential component of the logistics support infrastructure, TANAN LLC plays a pivotal role in enhancing the efficiency and reliability of transportation services.
+                </p>
+                <h3 class="text-3xl font-semibold text-primary mb-4 mt-8">Our Value Proposition</h3>
+                <p class="mb-4">
+                    Our core services—tire repair, replacement, balancing, alignment, retreading, and general truck maintenance—ensure transportation and logistics companies have a one-stop solution for all tire-related needs. This significantly minimizes downtime and optimizes fleet performance, directly impacting safety, fuel efficiency, and overall operational costs.
+                </p>
+                <p class="mb-4">
+                    TANAN LLC's commitment to providing quality services ensures trucks remain operational, reducing the risk of delays. Our approach to tire retreading demonstrates our commitment to offering economical solutions while supporting environmental sustainability by reducing tire waste.
+                </p>
+                <h3 class="text-3xl font-semibold text-primary mb-4 mt-8">Company Goals (5-Year Plan)</h3>
+                <p class="mb-4">
+                    Within five years, TANAN LLC aims to develop from its flagship industrial space in Baltimore, MD, and expand its operations significantly. Our projected annual service units by Year 5 include:
+                </p>
+                <ul class="list-disc list-inside ml-6 mb-4 space-y-2">
+                    <li><strong>Tire Repair:</strong> 7,594 hours per year</li>
+                    <li><strong>Tire Replacement:</strong> 6,379 services per year</li>
+                    <li><strong>Balancing Services:</strong> 2,278 services per year</li>
+                    <li><strong>Alignment Services:</strong> 2,531 services per year</li>
+                    <li><strong>Retreading Services:</strong> 3,797 services per year</li>
+                    <li><strong>Truck Maintenance:</strong> 1,266 services per year</li>
+                </ul>
+                <p>
+                    These goals reflect our per-hour and per-service revenue model, driving revenue growth and market presence.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team Section -->
+    <section id="leadership" class="py-16 sm:py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-4xl font-bold text-center text-primary mb-12">Our Leadership Team</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Mr. Otgonjargal Darisuren -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-md text-center">
+                    <img src="otgonjargal_darisuren_photo.jpg" alt="Mr. Otgonjargal Darisuren" class="w-48 h-48 rounded-full mx-auto mb-6 shadow-lg border-4 border-accent-light-blue object-cover">
+                    <h3 class="text-3xl font-bold text-primary mb-2">Mr. Otgonjargal Darisuren</h3>
+                    <p class="text-xl text-accent-light-blue font-semibold mb-4">CEO & Founder</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Mr. Darisuren brings multifaceted experience spanning business management, diplomacy, and project administration, showcasing a unique blend of strategic insight and practical expertise.
+                    </p>
+                    <h4 class="text-xl font-semibold text-primary mb-2">Key Experience & Education:</h4>
+                    <ul class="text-gray-600 text-left mx-auto max-w-xs list-disc list-inside space-y-1">
+                        <li>CEO, TANAN LLC (Oct 2022 - Present)</li>
+                        <li>Vice Consul, Embassy of Mongolia (Sep 2017 - Present)</li>
+                        <li>Airport Manager, Hong Kong Int. Airport / MIAT (Apr 2013)</li>
+                        <li>Food and Beverage Manager, Chinggis Khaan (Apr 2012)</li>
+                        <li>Bachelor of Business Administration, Institute of Finance and Economics</li>
+                    </ul>
+                </div>
+
+                <!-- Mr. Ochbadrakh Darisuren -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-md text-center">
+                    <img src="ochbadrakh_darisuren_photo.jpg" alt="Mr. Ochbadrakh Darisuren" class="w-48 h-48 rounded-full mx-auto mb-6 shadow-lg border-4 border-accent-light-blue object-cover">
+                    <h3 class="text-3xl font-bold text-primary mb-2">Mr. Ochbadrakh Darisuren</h3>
+                    <p class="text-xl text-accent-light-blue font-semibold mb-4">Co-Owner (10% Shares)</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        With 28 years of experience in international and multicultural contexts, Mr. Ochbadrakh adds invaluable knowledge in car import and trade.
+                    </p>
+                    <h4 class="text-xl font-semibold text-primary mb-2">Key Experience & Education:</h4>
+                    <ul class="text-gray-600 text-left mx-auto max-w-xs list-disc list-inside space-y-1">
+                        <li>CEO, OBT LLC (Apr 2010 - Present)</li>
+                        <li>Travel Agent, New Juulchin Tours (Jan 2002 - Jul 2008)</li>
+                        <li>Trade Officer, Tavan Bogd Trade (Sep 1995 - Dec 2001)</li>
+                        <li>Bachelor in Sports Tourism, Mongolian State University of Education</li>
+                    </ul>
+                </div>
+
+                <!-- Mr. Asagawa Tomotoshi -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-md text-center">
+                    <img src="asagawa_tomotoshi_photo.jpg" alt="Mr. Asagawa Tomotoshi" class="w-48 h-48 rounded-full mx-auto mb-6 shadow-lg border-4 border-accent-light-blue object-cover">
+                    <h3 class="text-3xl font-bold text-primary mb-2">Mr. Asagawa Tomotoshi</h3>
+                    <p class="text-xl text-accent-light-blue font-semibold mb-4">Co-Owner (10% Shares)</p>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        Mr. Tomotoshi brings 24 years of extensive practical knowledge, particularly in the tire industry and automotive mechanics.
+                    </p>
+                    <h4 class="text-xl font-semibold text-primary mb-2">Key Experience & Education:</h4>
+                    <ul class="text-gray-600 text-left mx-auto max-w-xs list-disc list-inside space-y-1">
+                        <li>CEO, TOMOTOSHI SHOKAI CO., LTD (Jan 2013 - Present)</li>
+                        <li>Tire Specialist, TOYO TIRE GROUP (May 1999 - May 2000)</li>
+                        <li>Specialized in Auto Mechanic Course, Nakanihon Automotive College</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-xl shadow-md text-lg text-gray-700 leading-relaxed mt-10">
+                <h3 class="text-3xl font-semibold text-primary mb-4">Summary of Investment & Ownership</h3>
+                <p class="mb-4">
+                    TANAN LLC was established at 4401 4th St N apt 138, Arlington, VA, and is set to move to Baltimore, MD. Mr. Otgonjargal Darisuren owns 80% of the shares, partnering with Mr. Ochbadrakh Darisuren and Mr. Asagawa Tomotoshi, each owning 10% of the shares.
+                </p>
+                <p class="mb-4">
+                    The initial investment totals <strong>$400,000</strong> in the first year, sourced from the founders' savings. The strategic decision is to reinvest profit/net income from years 2, 3, 4, and 5, aiming to reach a total investment of <strong>$900,000</strong> over five years. TANAN LLC is not relying on any government assistance for its development.
+                </p>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-blue-100 rounded-lg shadow-inner mt-6">
+                        <thead>
+                            <tr class="bg-primary text-white">
+                                <th class="py-3 px-4 text-left">Operation Year</th>
+                                <th class="py-3 px-4 text-left">Owners Capital Invested</th>
+                                <th class="py-3 px-4 text-left">Total Owners Investment</th>
+                                <th class="py-3 px-4 text-left">Total Investment (Cumulative)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-blue-50">
+                                <td class="py-2 px-4 border-b border-blue-200">1 (2025)</td>
+                                <td class="py-2 px-4 border-b border-blue-200">$400,000</td>
+                                <td class="py-2 px-4 border-b border-blue-200">$400,000</td>
+                                <td class="py-2 px-4 border-b border-blue-200">$400,000</td>
+                            </tr>
+                            <tr class="bg-blue-100">
+                                <td class="py-2 px-4 border-b border-blue-200">2 (2026)</td>
+                                <td class="py-2 px-4 border-b border-blue-200">$50,000</td>
+                                <td class="py-2 px-4 border-b border-blue-200">$50,000</td>
+                                <td class="py-2 px-4 border-b border-blue-200">$450,000</td>
+                            </tr>
+                            <tr class="bg-blue-50">
+                                <td class="py-2 px-4 border-b border-blue-200">3 (2027)</td>
+                                <td class="py-2 px-4 border-b border-blue-200">$50,000</td>
+                                <td class="py-2 px-4 border-b border-blue-200">$50,000</td>
+                                <td class="py-2 px-4 border-b border-blue-200">$500,000</td>
+                            </tr>
+                            <tr class="bg-blue-100">
+                                <td class="py-2 px-4 border-b border-blue-200">4 (2028)</td>
+                                <td class="py-2 px-4 border-b border-blue-200">$200,000</td>
+                                <td class="py-2 px-4 border-b border-blue-200">$200,000</td>
+                                <td class="py-2 px-4 border-b border-blue-200">$700,000</td>
+                            </tr>
+                            <tr class="bg-blue-50">
+                                <td class="py-2 px-4 border-b-0">5 (2029)</td>
+                                <td class="py-2 px-4 border-b-0">$200,000</td>
+                                <td class="py-2 px-4 border-b-0">$200,000</td>
+                                <td class="py-2 px-4 border-b-0">$900,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 sm:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-4xl font-bold text-center text-primary mb-12">Our Comprehensive Services</h2>
+            <p class="text-center text-lg text-gray-700 mb-12">
+                TANAN LLC offers a broad spectrum of services to ensure optimal performance, safety, and longevity for commercial truck fleets.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card: Tire Repair -->
+                <div class="bg-white p-6 rounded-xl shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="tire_repair_service.jpg" alt="Tire Repair" class="w-full h-48 object-cover rounded-lg mb-4 shadow-sm">
+                    <h3 class="text-2xl font-bold text-primary mb-2">Tire Repair</h3>
+                    <p class="text-gray-600 mb-4">
+                        Essential for addressing punctures and damages in rigorous trucking conditions. Our skilled Tire Repairers and Changers meticulously inspect each tire, identifying issues that can be safely repaired to extend its lifespan. This prevents costly replacements and ensures road safety. Our expertise includes patching, plugging, and reinforcing damaged areas to meet high safety and quality standards.
+                    </p>
+                </div>
+
+                <!-- Service Card: Tire Replacement -->
+                <div class="bg-white p-6 rounded-xl shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="tire_replacement_service.jpg" alt="Tire Replacement" class="w-full h-48 object-cover rounded-lg mb-4 shadow-sm">
+                    <h3 class="text-2xl font-bold text-primary mb-2">Tire Replacement</h3>
+                    <p class="text-gray-600 mb-4">
+                        TANAN LLC offers tire replacement services when repair is not feasible. Our Tire Builders and Automotive Service Technicians assess tire condition and recommend replacements as necessary, ensuring new tires are appropriately fitted, balanced, and meet specific truck requirements. This service is vital for maintaining truck safety and efficiency.
+                    </p>
+                </div>
+
+                <!-- Service Card: Balancing and Alignment -->
+                <div class="bg-white p-6 rounded-xl shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="balancing_alignment.jpg" alt="Balancing and Alignment" class="w-full h-48 object-cover rounded-lg mb-4 shadow-sm">
+                    <h3 class="text-2xl font-bold text-primary mb-2">Balancing and Alignment</h3>
+                    <p class="text-gray-600 mb-4">
+                        To ensure even tire wear and optimal truck performance, we provide balancing and alignment services. These are critical for preventing premature tire wear, reducing vibration, and improving fuel efficiency. Automotive Service Technicians use advanced equipment to ensure tires are perfectly balanced and aligned, integral to prolonging tire life and enhancing overall handling and safety.
+                    </p>
+                </div>
+
+                <!-- Service Card: Retreading Services -->
+                <div class="bg-white p-6 rounded-xl shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="retreading_service.jpg" alt="Retreading Services" class="w-full h-48 object-cover rounded-lg mb-4 shadow-sm">
+                    <h3 class="text-2xl font-bold text-primary mb-2">Retreading Services</h3>
+                    <p class="text-gray-600 mb-4">
+                        Retreading is a cost-effective and environmentally friendly alternative to new tires. TANAN LLC’s retreading services, managed by skilled Tire Builders, involve inspecting, buffing, and applying new treads to worn tires. This process not only extends tire life but also supports environmental sustainability by reducing tire waste.
+                    </p>
+                </div>
+
+                <!-- Service Card: Truck Maintenance -->
+                <div class="bg-white p-6 rounded-xl shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="truck_maintenance.jpg" alt="Truck Maintenance" class="w-full h-48 object-cover rounded-lg mb-4 shadow-sm">
+                    <h3 class="text-2xl font-bold text-primary mb-2">Truck Maintenance</h3>
+                    <p class="text-gray-600 mb-4">
+                        Beyond tires, TANAN LLC offers comprehensive truck maintenance services. This includes routine check-ups and repairs performed by Automotive Service Technicians and Mechanics, supervised by First-Line Supervisors of Mechanics, ensuring all truck components are in optimal condition. This holistic approach is crucial for vehicle longevity and minimizing breakdowns.
+                    </p>
+                </div>
+
+                <!-- Service Card: Customer Service -->
+                <div class="bg-white p-6 rounded-xl shadow-md transform hover:scale-105 transition duration-300">
+                    <img src="customer_service.jpg" alt="Customer Service" class="w-full h-48 object-cover rounded-lg mb-4 shadow-sm">
+                    <h3 class="text-2xl font-bold text-primary mb-2">Customer Service</h3>
+                    <p class="text-gray-600 mb-4">
+                        At every stage, our Customer Service Representatives are vital in coordinating services, addressing client inquiries, and ensuring a smooth experience for trucking companies. They are the communication link between technicians and clients, ensuring all needs are met efficiently and effectively.
+                    </p>
+                </div>
+            </div>
+            <p class="text-center text-lg text-gray-700 mt-12">
+                TANAN LLC’s services play a pivotal role in the national transportation sector by ensuring the safety, efficiency, and reliability of trucking operations. Each role, from the Tire Repairers to the Customer Service Representatives, contributes to the seamless operation of the logistics industry, highlighting the national importance of truck tire repair centers.
+            </p>
+        </div>
+    </section>
+
+    <!-- Expansion Plan & Locations Section -->
+    <section id="expansion" class="py-16 sm:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-4xl font-bold text-center text-primary mb-12">Company Location & Expansion Plan</h2>
+            <div class="bg-white p-8 rounded-xl shadow-md text-lg text-gray-700 leading-relaxed">
+                <p class="mb-4">
+                    Mr. Otgonjargal Darisuren has set a business strategy to provide tire repair and maintenance services for trucks, using the Small Business Administration (SBA) HUBZone program database as a reference to define locations in historically underutilized business zones in Maryland, Illinois, and Texas.
+                </p>
+                <p class="mb-6 font-bold text-accent-purple"> <!-- Using accent-purple here for emphasis -->
+                    Our goal for location choice is to help fuel small business growth in historically underutilized business zones. We aim to impact these areas by generating jobs for U.S. workers, improving wages and working conditions, helping local communities, and bringing investments and economic development.
+                </p>
+
+                <h3 class="text-3xl font-semibold text-primary mb-4 mt-8">Baltimore, Maryland (Headquarters)</h3>
+                <p class="mb-4">
+                    Our headquarters, initially established in Arlington, VA, is set to move to Baltimore, MD, in the first year of operations (2025) within a qualified HUBZone. An industrial space of 17,000 SF is available, enabling TANAN LLC to provide customized and premium truck tire repair and maintenance services.
+                </p>
+                <p class="mb-6">
+                    <em>Example: 800 Debelius Ave, Baltimore, MD 21205. Rental Rate: $12.00/SF/YR.</em>
+                </p>
+
+                <h3 class="text-3xl font-semibold text-primary mb-4 mt-8">Chicago, Illinois (Second Business Unit)</h3>
+                <p class="mb-4">
+                    Our second business unit is set to be established in Chicago, IL, in the third year of operations (2027) in a qualified HUBZone. This industrial space, with sizes ranging from 9,500-26,000 SF, will further enable TANAN LLC to provide premium services.
+                </p>
+                <p class="mb-6">
+                    <em>Example: 3333 W Lake St, Chicago, IL 60624. Rental Rate: $7.00/SF/YR.</em>
+                </p>
+
+                <h3 class="text-3xl font-semibold text-primary mb-4 mt-8">Houston, Texas (Third Business Unit)</h3>
+                <p class="mb-4">
+                    The third business unit will be established in Houston, TX, in the fifth year of operations (2029) also within a qualified HUBZone. This expansion will continue our mission to provide customized and premium truck tire repair and maintenance services across key U.S. regions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry & Market Analysis Section -->
+    <section id="market-analysis" class="py-16 sm:py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-4xl font-bold text-center text-primary mb-12">Industry & Market Analysis</h2>
+            <div class="bg-gray-100 p-8 rounded-xl shadow-md text-lg text-gray-700 leading-relaxed mb-8">
+                <h3 class="text-3xl font-semibold text-primary mb-4">Industry Overview: Tire Dealers & Car Body Shops</h3>
+                <p class="mb-4">
+                    The Tire Dealers industry (NAICS 441320) is a niche strategic sector of the U.S. economy, key to ensuring U.S. competitiveness in the global market. With a total volume of $45.7 billion in 2023, it has grown at an estimated CAGR of 1.1% over the last five years, supporting 203,000 direct jobs and $9.3 billion in wages.
+                </p>
+                <p class="mb-4">
+                    The Car Body Shops industry (NAICS 811120) also contributes significantly, with $59.1 billion in revenue in 2023 and 338,000 direct jobs, paying $16.9 billion in wages. Both industries are expected to see renewed growth in the coming years.
+                </p>
+
+                <h3 class="text-3xl font-semibold text-primary mb-4 mt-8">Key External Drivers</h3>
+                <ul class="list-disc list-inside ml-6 mb-4 space-y-2">
+                    <li><strong>Total Vehicle Miles:</strong> Directly impacts demand for tire replacement/retreads.</li>
+                    <li><strong>Average Age of Vehicle Fleet:</strong> Older vehicles typically require more maintenance.</li>
+                    <li><strong>Consumer Confidence Index:</strong> Influences willingness to purchase premium services.</li>
+                    <li><strong>Price of New Cars:</strong> Affects decisions between vehicle replacement and maintenance.</li>
+                    <li><strong>World Price of Rubber:</strong> Impacts tire manufacturing costs and retail prices.</li>
+                    <li><strong>Per Capita Disposable Income:</strong> Affects discretionary spending on vehicle repairs and services.</li>
+                    <li><strong>Number of Motor Vehicle Registrations:</strong> Indicates the potential customer pool.</li>
+                    <li><strong>Number of Vehicle Accidents:</strong> Drives demand for body work and repairs.</li>
+                </ul>
+
+                <h3 class="text-3xl font-semibold text-primary mb-4 mt-8">Key Success Factors</h3>
+                <ul class="list-disc list-inside ml-6 mb-4 space-y-2">
+                    <li><strong>Control Total Supply on Market:</strong> Adjusting prices, ensuring quality, offering variety.</li>
+                    <li><strong>Establish Supply Contracts for Key Inputs:</strong> Consistent product availability and competitive pricing.</li>
+                    <li><strong>Develop a Skilled Labor Force:</strong> Through comprehensive training and professional development.</li>
+                    <li><strong>Develop New Products:</strong> Innovation in products and services.</li>
+                    <li><strong>Maintain Excellent Customer Relations:</strong> Exceptional service, prompt responses, and high-quality products.</li>
+                    <li><strong>Membership of an Industry Organization:</strong> Enhances credibility and recognition.</li>
+                    <li><strong>Provision of Superior After-Sales Service:</strong> Fosters repeat customers and referrals.</li>
+                    <li><strong>Effective Cost Controls:</strong> Efficient management of operational expenses.</li>
+                </ul>
+
+                <h3 class="text-3xl font-semibold text-primary mb-4 mt-8">Competition Framework & Barriers to Entry</h3>
+                <p class="mb-4">
+                    Both the Tire Dealers and Car Body Shops industries are highly competitive and fragmented. Competition centers on price, quality of repair, service, and reputation. TANAN LLC's unique value proposition focuses on key client relationships, a strong online presence, and a premium customer experience adapted to the Maryland, Illinois, and Texas markets.
+                </p>
+                <p class="mb-4">
+                    Barriers to entry for Tire Dealers are low (no licensing, easy supply). For Car Body Shops, barriers are medium (strict environmental laws, start-up capital, need for skilled technicians). Mr. Otgonjargal Darisuren's deep understanding of market conditions and well-elaborated business plan provide a solid foundation to overcome these challenges.
+                </p>
+                <h4 class="text-2xl font-semibold text-primary mb-2 mt-6">SWOT Analysis Summary:</h4>
+                <ul class="list-disc list-inside ml-6 mb-4 space-y-2">
+                    <li><strong>Strengths:</strong> Low capital requirement, Mr. Darisuren's deep market understanding.</li>
+                    <li><strong>Weaknesses:</strong> Not explicitly detailed in the provided text but implied by competitive market.</li>
+                    <li><strong>Opportunities:</strong> Growing total vehicle miles, increasing motor vehicle registrations, economic recovery.</li>
+                    <li><strong>Threats:</strong> High competition, fluctuating consumer confidence index, decreasing new car sales affecting repair demand, price of new cars.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Highlights Section -->
+    <section id="financials" class="py-16 sm:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-4xl font-bold text-center text-primary mb-12">Financial Highlights & Projections</h2>
+            <div class="bg-white p-8 rounded-xl shadow-md text-lg text-gray-700 leading-relaxed">
+                <p class="mb-4">
+                    TANAN LLC is projected to generate a total revenue of <strong>$15.6 million</strong> over its first five years of operation (2025-2029) by providing tire repair and maintenance services for trucks.
+                </p>
+                <h3 class="text-3xl font-semibold text-primary mb-4 mt-8">Revenue & Profit Projections (5-Year Total)</h3>
+                <ul class="list-disc list-inside ml-6 mb-4 space-y-2">
+                    <li><strong>Total Revenue:</strong> $15,600,901</li>
+                    <li><strong>Total Cost:</strong> ($13,805,902)</li>
+                    <li><strong>Net Profit (before tax):</strong> $1,794,998</li>
+                    <li><strong>Total Tax Payments:</strong> ($554,202) (Federal, Medicare, Social Security)</li>
+                    <li><strong>Net Income:</strong> $1,240,796 (7.95% Net Income Margin)</li>
+                </ul>
+                <p class="mb-6">
+                    The business model is sound, demonstrating profitable operation across all five years with an average net profit margin of 11.51% (before tax).
+                </p>
+
+                <h3 class="text-3xl font-semibold text-primary mb-4 mt-8">Investment & Capital Budget</h3>
+                <p class="mb-4">
+                    The initial capital investment of <strong>$400,000</strong> from Mr. Otgonjargal Darisuren and partners, combined with subsequent reinvestments, is sufficient to cover start-up costs and initial working capital. Total investment will reach <strong>$900,000</strong> over five years, entirely from private funds and reinvested profits, without government assistance.
+                </p>
+                <p class="mb-4">
+                    A CAPEX investment of <strong>$70,750</strong> is planned for the first year, allocated for industrial space equipment, telecom, notebooks, industrial furniture, and appliances.
+                </p>
+                <p class="mb-6">
+                    TANAN LLC will contribute significantly to local communities through rental payments for industrial space. Over five years, we project 32,490 square feet of commercial industrial space, generating <strong>$2,144,340</strong> in rental income for the community and attracting commercial development.
+                </p>
+
+                <h3 class="text-3xl font-semibold text-primary mb-4 mt-8">Break-Even Point</h3>
+                <p class="mb-4">
+                    A conservative calculation based on industry indicators shows the break-even point is reached in Year 1 as total sales hit 115% of the projected forecast. The initial first-year loss is easily absorbed by the initial investment, with all subsequent years forecasted to generate a positive margin.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Creation & Staff Plan Section -->
+    <section id="jobs" class="py-16 sm:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-4xl font-bold text-center text-primary mb-12">Job Creation & Staff Plan</h2>
+            <div class="bg-white p-8 rounded-xl shadow-md text-lg text-gray-700 leading-relaxed">
+                <p class="mb-4">
+                    TANAN LLC is committed to creating significant employment opportunities for U.S. workers across Maryland, Illinois, and Texas.
+                </p>
+                <h3 class="text-3xl font-semibold text-primary mb-4 mt-8">Direct & Indirect Job Creation</h3>
+                <ul class="list-disc list-inside ml-6 mb-4 space-y-2">
+                    <li>By Year 5, the endeavor will generate <strong>49 direct full-time and part-time job employees and contractors</strong> for U.S. workers.</li>
+                    <li>Based on Economic Policy Institute multipliers (214 indirect jobs for every 100 direct jobs in Automotive repair and maintenance), TANAN LLC will generate a total of <strong>103 indirect jobs</strong>.</li>
+                    <li>The total payment of wages over five years is projected to be <strong>$5.88 million</strong>.</li>
+                </ul>
+
+                <h3 class="text-3xl font-semibold text-primary mb-4 mt-8">Key Roles (Based on 2023 Standard Occupational Classification)</h3>
+                <ul class="list-disc list-inside ml-6 mb-4 space-y-2">
+                    <li><strong>Owner - Chief Entrepreneur:</strong> CEO - Mr. Otgonjargal Darisuren</li>
+                    <li><strong>Logisticians:</strong> Analyze and coordinate ongoing logistical functions.</li>
+                    <li><strong>Accountants and Auditors (Contractor):</strong> Examine, analyze, and interpret financial records.</li>
+                    <li><strong>Sales Representatives of Services:</strong> Sell services to individuals or businesses.</li>
+                    <li><strong>Service Managers (Customer Service Representatives):</strong> Interact with customers, provide information, resolve inquiries.</li>
+                    <li><strong>Administrative Assistants:</strong> Perform routine administrative functions.</li>
+                    <li><strong>First-Line Supervisors of Mechanics:</strong> Directly supervise and coordinate mechanic activities.</li>
+                    <li><strong>Automotive Service Technicians and Mechanics:</strong> Diagnose, adjust, repair, or overhaul automotive vehicles, including alignment and balancing.</li>
+                    <li><strong>Bus and Truck Mechanics and Diesel Engine Specialists:</strong> Diagnose, adjust, repair, or overhaul buses and trucks, or maintain diesel engines.</li>
+                    <li><strong>Tire Repairers and Changers:</strong> Repair and replace tires, buff defective areas.</li>
+                    <li><strong>Tire Builders:</strong> Operate machines to build tires, apply treads.</li>
+                </ul>
+                <p class="mt-6">
+                    All wage estimates are based on the U.S. Bureau of Labor Statistics' National Occupational Employment and Wage Estimates (May 2023), including employee taxes (Federal Unemployment, Medicare, Social Security).
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketing Approach Section -->
+    <section id="marketing" class="py-16 sm:py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-4xl font-bold text-center text-primary mb-12">Our Marketing Approach</h2>
+            <div class="bg-gray-100 p-8 rounded-xl shadow-md text-lg text-gray-700 leading-relaxed">
+                <p class="mb-4">
+                    TANAN LLC employs a multifaceted marketing strategy, leveraging Mr. Otgonjargal Darisuren's extensive network and modern digital platforms.
+                </p>
+                <h3 class="text-3xl font-semibold text-primary mb-4 mt-8">Marketing Strategy</h3>
+                <ul class="list-disc list-inside ml-6 mb-4 space-y-2">
+                    <li><strong>Networking & Referrals:</strong> Mr. Darisuren is actively developing business leads through his sector network within the U.S. Mongolian Community and by chaining customer referrals. The social network of Mongolian and U.S. entrepreneurs is key to propagating the chain effect on the sales pipeline.</li>
+                    <li><strong>SBA & Industry Engagement:</strong> Participation in SBA seminars, state, and industry associations, and networking with Mongolian entrepreneurs in the U.S. provides a constant fresh feed of opportunities and fosters long-term client relationships.</li>
+                    <li><strong>Community Focus:</strong> Relying on networking with local and Mongolian communities to obtain future business through referrals and recommendations.</li>
+                </ul>
+
+                <h3 class="text-3xl font-semibold text-primary mb-4 mt-8">Site & Social Media</h3>
+                <p class="mb-4">
+                    Understanding the critical role of online marketing, 8% of each business unit's Total Revenue is allocated as expenditure on marketing activities. This budget will develop our website and fund social media insertions on platforms like LinkedIn, Facebook, Twitter, Instagram, and YouTube, aiming for maximum word-of-mouth referrals and new investment opportunities.
+                </p>
+
+                <h3 class="text-3xl font-semibold text-primary mb-4 mt-8">Seminars & Traditional Media</h3>
+                <p class="mb-4">
+                    Traditional marketing campaigns, also funded by the 8% marketing budget, will focus on publications in Small Business Sector Magazines (average 50,000 units/month circulation). These will highlight our quality of service and commitment to productivity, building the company's reputation. We will also engage through seminars and webinars dedicated to medium and small industries.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 sm:py-24 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-2xl">
+            <h2 class="text-4xl font-bold text-center text-primary mb-12">Get In Touch</h2>
+            <div class="bg-white p-8 rounded-xl shadow-md">
+                <p class="text-center text-lg text-gray-700 mb-6">
+                    For inquiries about our services, partnerships, or investment opportunities, please reach out to Mr. Otgonjargal Darisuren.
+                </p>
+                <div class="text-center space-y-4 mb-8">
+                    <p class="text-xl font-semibold text-gray-800">
+                        Main Contact: Mr. Otgonjargal Darisuren
+                    </p>
+                    <p class="text-xl font-semibold text-gray-800">
+                        Mobile: <a href="tel:+12028189020" class="text-link-color">+1 202-818-9020</a>
+                    </p>
+                    <p class="text-xl font-semibold text-gray-800">
+                        Email: <a href="mailto:otgoo1070@gmail.com" class="text-link-color">otgoo1070@gmail.com</a>
+                    </p>
+                    <p class="text-xl font-semibold text-gray-800">
+                        Current Address: 22203-801 N Wakefield Street, Apt107, Arlington, Virginia, U.S. (Headquarters moving to Baltimore, MD)
+                    </p>
+                </div>
+                <form action="#" method="POST" class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-lg font-medium text-gray-700 mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-accent-light-blue focus:border-accent-light-blue text-lg">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-lg font-medium text-gray-700 mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-accent-light-blue focus:border-accent-light-blue text-lg">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-lg font-medium text-gray-700 mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-accent-light-blue focus:border-accent-light-blue text-lg"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full btn-primary px-6 py-3 rounded-md text-lg font-semibold shadow-lg">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-8 mt-12">
+        <div class="container mx-auto text-center px-4">
+            <p class="text-lg">&copy; 2024 TANAN LLC. All rights reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <!-- Placeholder for social media links - Replace # with actual links if available -->
+                <a href="#" class="text-gray-400 hover:text-accent-light-blue transition duration-300">GitHub</a>
+                <a href="#" class="text-gray-400 hover:text-accent-light-blue transition duration-300">LinkedIn</a>
+                <a href="#" class="text-gray-400 hover:text-accent-light-blue transition duration-300">Twitter</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
