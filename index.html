@@ -151,19 +151,46 @@
         </div>
     </section>
 <div style="
-    background-color: #f8f9fa; /* Light grey background */
-    border: 1px solid #dee2e6; /* Light grey border */
-    border-radius: 8px; /* Slightly rounded corners */
-    padding: 20px; /* Space inside the box */
-    margin-top: 30px; /* Space above the box */
+    background-color: #f8f8f8; /* Very light grey background - slight adjustment from before */
+    border: 1px solid #e0e0e0; /* Light grey border - slight adjustment */
+    border-radius: 10px; /* Slightly more rounded corners */
+    padding: 25px; /* More space inside the box */
+    margin-top: 40px; /* More space above the box */
+    margin-bottom: 40px; /* Add space below the box */
     text-align: center; /* Center the text */
-    font-family: Arial, sans-serif; /* A common, readable font */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* A modern, clean font */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* More prominent shadow for depth */
+    max-width: 800px; /* Optional: Limit width for better appearance on large screens */
+    margin-left: auto; /* Center the box if max-width is used */
+    margin-right: auto; /* Center the box if max-width is used */
 ">
-    <p style="margin-bottom: 0; font-size: 1.1em; color: #333;">
+    <p style="
+        margin-bottom: 0;
+        font-size: 1.2em; /* Slightly larger text */
+        color: #333;
+        display: flex; /* Use flexbox to align text and logo */
+        align-items: center; /* Vertically center items */
+        justify-content: center; /* Horizontally center items */
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    ">
         Tanan LLC is an official partner with
-        <a href="http://tomotoshi-shokai.jp/" target="_blank" rel="noopener noreferrer" style="display: inline-block; vertical-align: middle; margin-left: 10px;">
-            <img src="tomotoshi-shokai-logo.svg" alt="Tomotoshi Shokai Logo" style="height: 40px; width: auto;">
+        <a href="http://tomotoshi-shokai.jp/" target="_blank" rel="noopener noreferrer" style="
+            display: inline-flex; /* Use inline-flex for the link to align with text */
+            align-items: center; /* Center logo vertically within the link */
+            text-decoration: none; /* Remove underline from link */
+            color: #007bff; /* Link color if text fallback */
+            margin-left: 15px; /* More space between text and logo */
+        ">
+            <img src="tomotoshi-shokai-logo.svg" alt="Tomotoshi Shokai Logo" style="
+                height: 60px; /* Increased logo height for more prominence */
+                width: auto;
+                vertical-align: middle; /* Ensure vertical alignment */
+            ">
+            <span style="
+                font-weight: bold;
+                margin-left: 10px; /* Space between logo and text (if fallback) */
+                display: none; /* Hide text if logo is present */
+            ">Tomotoshi Shokai</span>
         </a>
     </p>
 </div>
